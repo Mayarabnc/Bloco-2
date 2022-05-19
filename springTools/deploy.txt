@@ -1,0 +1,22 @@
+<dependency>
+<groupId>org.postgresql</groupId>
+<artifactId>postgresql</artifactId>
+</dependency>
+
+
+spring.jpa.generate-ddl=true
+spring.datasource.url=${JDBC_DATASOURCE_URL}
+spring.jpa.show-sql=true
+spring.jackson.date-format=yyyy-MM-dd HH:mm:ss
+spring.jackson.time-zone=Brazil/East
+
+spring.profiles.active=dev -> O Spring executará a aplicação com a configuração
+do Banco de dados local (MySQL)
+
+/ OU /
+
+spring.profiles.active=prod -> O Spring executará a aplicação com a configuração
+do Banco de dados na nuvem (Heroku)
+
+Para o Deploy, devemos deixar a linha spring.profiles.acঞve configurada com a opção
+prod.

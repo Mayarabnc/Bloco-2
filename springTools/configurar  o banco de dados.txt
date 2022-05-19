@@ -1,0 +1,40 @@
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.database=mysql
+spring.datasource.url=jdbc:mysql://localhost/db_blogpessoal?createDatabaseIfNotExist=true&serverTimezone=America/Sao_Paulo&useSSl=false
+spring.datasource.username=root
+spring.datasource.password=root
+
+spring.jpa.show-sql=true
+
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL8Dialect
+
+spring.jackson.date-format=yyyy-MM-dd HH:mm:ss
+spring.jackson.time-zone=Brazil/East
+
+
+
+
+
+--------------------------------------------- EXEPLICAÇÃO ---------------------------------------------------------
+
+
+
+spring.jpa.hibernate.ddl-auto=update
+/* Define que todas as alterações que fizermos aqui, reflete no Banco de Dados (MySQL) 
+e possibilita nós alterarmos as tabelas, não so criá-las */
+
+spring.jpa.database=mysql
+spring.jpa.show-sql=true
+/* Facultativa mas serve pra mostrar no console as operações MySQL que estão 
+sendo feitas. Tabelas, dados, consultas... , basicamente se a conexão está 
+funcionando corretamente. */
+
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL8Dialect
+// Define que estamos usamos a linguagem MySQL
+
+spring.jackson.date-format=yyyy-MM-dd HH:mm:ss
+/* Formato de data e hora que estamos utilizando quando salvamos algo no 
+Banco de Dados, se não salva esquisito (no padrão americano) */
+
+spring.jackson.time-zone=Brazil/East
+// Fuso horário, padrão de acordo com o país
